@@ -1,0 +1,10 @@
+[
+  {
+    "type": "fix",
+    "description": "Reject negative prices instead of reducing the subtotal."
+  },
+  {
+    "type": "test",
+    "description": "Cover empty and invalid baskets."
+  }
+]

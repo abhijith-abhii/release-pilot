@@ -1,0 +1,9 @@
+{
+  "slug": "release-pilot",
+  "fresh_venv": "work/clean-envs/release-pilot",
+  "fresh_checkout": "work/clean/release-pilot",
+  "passed": true,
+  "failure": null,
+  "runtime": "Python 3.12.14",
+  "model_training": null
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "release-pilot",
+  "heading": "Release Pilot",
+  "scrollWidth": 1280,
+  "viewport": 1280,
+  "default_ui_result": "rendered successfully",
+  "screenshot": "screenshots/app.png"
+}

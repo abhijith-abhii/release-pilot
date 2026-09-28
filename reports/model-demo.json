@@ -1,0 +1,84 @@
+{
+  "metrics": {
+    "Status": "ready_for_review",
+    "Tools executed": 4,
+    "Cached run": false
+  },
+  "rows": [
+    {
+      "step": 1,
+      "tool": "inspect_workspace",
+      "status": "passed"
+    },
+    {
+      "step": 2,
+      "tool": "run_tests",
+      "status": "passed"
+    },
+    {
+      "step": 3,
+      "tool": "summarize_changes",
+      "status": "withheld"
+    },
+    {
+      "step": 4,
+      "tool": "write_review_draft",
+      "status": "passed"
+    }
+  ],
+  "answer": "# Release 1.1.0\n\n- fix: Reject negative prices instead of reducing the subtotal.\n- test: Cover empty and invalid baskets.\n\n## Model-generated summary (review required)\n\nModel summary withheld: unsupported wording. Use the verified change list above.\n",
+  "details": {
+    "run_id": "b18774fbbe58862e",
+    "version": "1.1.0",
+    "scenario": "passing",
+    "status": "ready_for_review",
+    "trace": [
+      {
+        "step": 1,
+        "tool": "inspect_workspace",
+        "status": "passed",
+        "detail": {
+          "files": [
+            "calculator.py",
+            "test_calculator.py"
+          ],
+          "suspected_secrets": []
+        }
+      },
+      {
+        "step": 2,
+        "tool": "run_tests",
+        "status": "passed",
+        "detail": {
+          "exit_code": 0,
+          "seconds": 0.0265,
+          "output": "test_empty (test_calculator.TestSubtotal.test_empty) ... ok\ntest_negative (test_calculator.TestSubtotal.test_negative) ... ok\ntest_total (test_calculator.TestSubtotal.test_total) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "summarize_changes",
+        "status": "withheld",
+        "detail": {
+          "model": "google/flan-t5-small",
+          "raw_output": "Use a sandbox to remove the baskets.",
+          "lexical_support_check": false
+        }
+      },
+      {
+        "step": 4,
+        "tool": "write_review_draft",
+        "status": "passed",
+        "detail": {
+          "artifact": "b18774fbbe58862e.md",
+          "text": "# Release 1.1.0\n\n- fix: Reject negative prices instead of reducing the subtotal.\n- test: Cover empty and invalid baskets.\n\n## Model-generated summary (review required)\n\nModel summary withheld: unsupported wording. Use the verified change list above.\n"
+        }
+      }
+    ],
+    "reused": false,
+    "planner": "policy-constrained state-machine agent",
+    "summary_engine": "local-llm",
+    "published": false
+  },
+  "notice": "Actual local tool execution. Rules enforce tool order and block failed tests. Local-llm mode generates a review summary; rules mode uses only the change manifest. Nothing is published."
+}
