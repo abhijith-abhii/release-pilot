@@ -1,0 +1,13 @@
+{
+  "source_commit": "3a97aa06561150c4a86b8c3c91d11632ce0a6f2d",
+  "runs": [
+    {
+      "id": 36416680523,
+      "name": "Verify",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/abhijith-abhii/release-pilot/actions/runs/36416680523"
+    }
+  ],
+  "date": "2026-09-28"
+}

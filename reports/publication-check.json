@@ -1,7 +1,7 @@
 {
   "project": "release-pilot",
-  "text_files_checked": 30,
-  "history_blobs_checked": 0,
+  "text_files_checked": 31,
+  "history_blobs_checked": 29,
   "findings": [],
   "limitations": "Pattern-based check, not proof of absence of secrets. Authored sample data and source licenses reviewed separately."
 }
